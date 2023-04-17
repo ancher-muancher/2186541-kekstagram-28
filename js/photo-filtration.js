@@ -74,5 +74,38 @@ const createFilters = (serverPhotos) => {
   startFilration(serverPhotos);
 };
 
+
+// let chosenFilterID = 'filter-default';
+
+// const updateCSSClasses = (nextActiveButton) => {
+//   buttonsContainer.querySelector(`#${chosenFilterID}`).classList.remove(buttonConditions.ACTIVE);
+//   nextActiveButton.classList.add(buttonConditions.ACTIVE);
+//   chosenFilterID = nextActiveButton.id;
+// };
+
+// const createDebouncedRenderer = (allPhotos) => debounce(() => {
+//   const filtratedPhotos = filterTypes[chosenFilterID](allPhotos);
+//   deletePictures();
+//   createMiniature(filtratedPhotos);
+// });
+
+// const createFilters = (serverPhotos) => {
+//   imgFilters.classList.remove(buttonConditions.INACTIVE);
+//   const debouncedRenderPhotos = createDebouncedRenderer(serverPhotos);
+
+//   buttonsContainer.addEventListener('click', (evt) => {
+//     const chosenFilterButton = evt.target.closest(buttonConditions.DEFAULT);
+//     if (chosenFilterButton) {
+//       updateCSSClasses(chosenFilterButton);
+//       debouncedRenderPhotos();
+//     }
+//   });
+// };
+
+
+
+
+
+
 export { createFilters };
 
